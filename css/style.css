@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Muli', sans-serif;
+}
+
+/*********** INDEX  *********/
+
+div.jumbotron {
+  margin-bottom: 0px;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+div.formContainer {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.textContainer {
+  font-size: 0.9em;
+  text-align: center;
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.textBody {
+  font-size: 1.1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.bodyCenter {
+  min-width: 300px;
+  max-width: 900px;
+}
+
+#footer {
+  font-size: 0.8em;
+  width: 100%;
+  height: 15px;
+  background-color: #F6F6F6;
+  position: fixed; 
+  bottom: 0px;
+  text-align: "center";
+}
+
+/*********** VIZ  *********/
+
+/*registration*/
+#registrationText {
+  font-size: 0.8em;
+  padding-bottom: 1em;
+}
+
+/*//////*/
+
+div.panel-body {
+    padding: 5px;
+}
+
+#map {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  padding-bottom:44px;
+}
+
+.SvgOverlay svg {
+    position: absolute;
+    top: -4000px;
+    left: -4000px;
+    width: 8000px;
+    height: 8000px;
+}
+
+.moves {
+    /*stroke-width: 2px;*/
+    fill: none;
+    fill-opacity: 0;
+    opacity: .65;
+}
+
+.place {
+  fill: #FFFFFF;
+  stroke: #4d4d4d;
+  stroke-width: 1.5px;
+  opacity: 1;
+}
+
+/*----------*/
+
+#bar {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    padding: 5px;
+    width: 100%;
+    height: 44px;
+}
+
+.bar-filter {
+    margin-left: 10px;
+    margin-right: 10px;
+    float:left;
+}
+
+#date-filter {
+    width: 400px;
+}
+
+.btn-group {
+    margin-left: 10px;
+    float:left;
+}
+
+#initialDate,#finalDate {
+    width: 140px;
+}
+
+#monthDate {
+    width: 175px;
+}
+
+#bar-mode-option,
+#bar-code-option {
+    margin-left: 20px;
+}
+
+/*----------*/
+
+#info-panel {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 5px;
+
+    background-color: white;
+    width: 200px;
+    height: 380px;
+    padding: 5px;
+}
+
+#panel .title {
+    text-align: center;
+}
+
+/*----------*/
+
+.chart {
+    margin-top: 10px;
+}
+
+.axis {
+  font-size: 4px;
+  fill: #333333;
+}
+
+.axis path,
+.axis line {
+  fill: #ccc;
+  stroke: #FFF;
+  shape-rendering: crispEdges;
+  stroke-width: 1px;
+}
+
+.x.axis path {
+  stroke-width: 1px;
+}
+
+.barScore {
+    font-size: 12px;
+    fill: #FFF;
+    text-anchor: end;
+}
+
+.textAnchorLeft {
+    fill: #333;
+    text-anchor: start;
+}
+
+.textAnchorRight {
+    text-anchor: end;
+}
+
+.barLabel {
+    font-size: 11px;
+    fill: #333;
+    text-anchor: start;
+}
+
+#info-modes {
+  margin-top: 30px;
+}
+
+#info-mode-option {
+    padding-left: 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#days-container {
+    height: 220px;
+    width: 100%;
+    overflow: scroll;
+}
+
+#days-container .day{
+    width: 100%;
+    clear: left;
+    margin-bottom: 7px;
+}
+
+.day div.panel-heading {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.item-day {
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.panel-body span.daily-info {
+    margin-left: 5px;
+    font-size: 12px;
+    padding-top: 2px;
+}
+
+hr.hr-sep {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+/*loading*/
+
+#loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.6)
+}
+
+.spinner {
+  margin: auto;
+  margin-top: 25%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  
+  -webkit-animation: rotate 2.0s infinite linear;
+  animation: rotate 2.0s infinite linear;
+}
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  /*background-color: #756bb1;*/
+  background-color: #d95f0e;
+  border-radius: 100%;
+  opacity: .8;
+  
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0px;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
