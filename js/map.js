@@ -45,9 +45,12 @@ function init() {
 
     //map div size
     var wHeight = $(window).height();
+    var wWidth = $(window).width() - $("#bar").innerWidth();
     var barHeight = $("#bar").height();
-    $("#map").height(wHeight-44);
 
+    $("#map").height(wHeight - 44);
+    $("#map").width(wWidth);
+    
     buildMap();
 
     loadUserProfile();
@@ -171,7 +174,10 @@ d3.selection.prototype.moveToFront = function() {
 $(window).resize(function() {
     //map div size
     var wHeight = $(window).height();
-    $("#map").height(wHeight-88);
+    var wWidth = $(window).width() - $("#bar").innerWidth();
+    $("#map").height(wHeight - 44);
+    $("#map").width(wWidth);
+
 });
 
 function buildMap() {

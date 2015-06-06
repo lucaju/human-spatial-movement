@@ -73,7 +73,8 @@ div.panel-body {
 }
 
 #map {
-  width: 100%;
+  /*width: 100%;*/
+  width: 500px;
   height: 100px;
   margin: 0;
   padding: 0;
@@ -105,40 +106,30 @@ div.panel-body {
 /*----------*/
 
 #bar {
-    position: absolute;
-    display: block;
-    bottom: 0px;
-    padding: 5px;
-    width: 100%;
-    height: 44px;
+    float: left;
+    padding: 15px;
+    width: 200px;
+    height: 100%;
+    overflow: scroll;
 }
 
-.bar-filter {
-    margin-left: 10px;
-    margin-right: 10px;
-    float:left;
-}
-
-#date-filter {
-    width: 400px;
-}
-
-.btn-group {
-    margin-left: 10px;
-    float:left;
-}
-
-#initialDate,#finalDate {
-    width: 140px;
-}
-
-#monthDate {
-    width: 175px;
-}
-
+#bar-period-option,
 #bar-mode-option,
 #bar-code-option {
-    margin-left: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#bar-mode-option .btn {
+  text-align: left;
+}
+
+#bar-code-option .btn {
+  text-align: left;
+}
+
+.modeOptionImage {
+  margin-right: 5px;
 }
 
 /*----------*/

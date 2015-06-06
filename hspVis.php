@@ -45,78 +45,60 @@
         </div>
     </div>
 
-     <div id="map-wrap">
-        <div id="map"></div>
-    </div>
     <div id="bar">
 
-        
-
-        <!-- <div class="bar-filter" id="date-filter"> -->
-        <div class="btn-toolbar" role="toolbar" aria-label="...">
+        <div class="btn-toolbar" role="toolbar">
 
             <div id="registrationBTContainer" class="btn-group dropup">
                 <button id="registrationBT" class="btn btn-primary" type="button" data-toggle="modal" data-target="#registrationModal">register</button>
             </div>
 
-            <div class="btn-group dropup">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Period <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li class="periodPiker" ><a href="#">Day</a></li>
-                    <li class="periodPiker" ><a href="#">Month</a></li>
-                    <li class="periodPiker" ><a href="#">Range</a></li>
-                </ul>
+            <div id="bar-period-option">
 
-            </div>
+                <h4>Period</h4>
 
-            <div class="btn-group" id="initialDate">
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control btn-default" />
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                    </span>
+                <div class="btn-group-sm btn-group-justified" role="group" data-toggle="buttons">
+                    <label class="btn btn-default periodPiker"><input type="radio" name="options" id="option1" autocomplete="off">Day</label>
+                    <label class="btn btn-default periodPiker"><input type="radio" name="options" id="option2" autocomplete="off">Month</label>
+                    <label class="btn btn-default periodPiker active"><input type="radio" name="options" id="option3" autocomplete="off">Range</label>
                 </div>
-            </div>
 
-            <div class="btn-group" id="finalDate">
-                <div class='input-group date' id='datetimepicker2'>
-                    <input type='text' class="form-control btn-default" />
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                    </span>
+                <div class="btn-group" id="initialDate">
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' class="form-control btn-default" />
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="btn-group" id="monthDate">
-                <div class='input-group date' id='datetimepicker3'>
-                    <input type='text' class="form-control btn-default" data-date-format="MMMM YYYY"/>
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                    </span>
+                <div class="btn-group" id="finalDate">
+                    <div class='input-group date' id='datetimepicker2'>
+                        <input type='text' class="form-control btn-default" />
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
                 </div>
+
+                <div class="btn-group" id="monthDate">
+                    <div class='input-group date' id='datetimepicker3'>
+                        <input type='text' class="form-control btn-default" data-date-format="MMMM YYYY"/>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="bar-spacer"></div>
-
-            <div id="bar-mode-option" class="btn-group" data-toggle="buttons">
-                <label class="btn btn-default disabled">
-                    <input type="radio" name="options" id="option0" autocomplete="off"> Mode
-                </label>
-
+            <div id="bar-mode-option" class="btn-group-vertical" data-toggle="buttons">
+                <h4>Mode</h4>
                 <label class="btn btn-default active"><input type="radio" name="options" id="option1" autocomplete="off">all</label>
             </div>
 
-            <div class="bar-spacer"></div>
-
-            <div id="bar-code-option" class="btn-group" data-toggle="buttons">
-                <label class="btn btn-default disabled">
-                    <input type="radio" name="options" id="option0" autocomplete="off">Encode
-                </label>
-
+            <div id="bar-code-option" class="btn-group-vertical" data-toggle="buttons">
+                <h4>Encode</h4>
                 <label class="btn btn-default active"><input type="radio" name="options" id="option1" autocomplete="off">none</label>
-
                 <label class="btn btn-default"><input type="radio" name="options" id="option2" autocomplete="off">transportation</label>
-
                 <label class="btn btn-default"><input type="radio" name="options" id="option3" autocomplete="off">duration (color)</label>
-
                 <label class="btn btn-default"><input type="radio" name="options" id="option4" autocomplete="off">duration (thickness)</label>
             </div>
 
@@ -124,6 +106,12 @@
 
     </div>
 
+    <!-- MAP -->
+    <div id="map-wrap">
+        <div id="map"></div>
+    </div>
+
+    <!-- INFO PANEL -->
     <div id="info-panel" class="panel panel-default">
         <div class="panel-body">
             <div id="info-mode-option" class="btn-group" data-toggle="buttons">

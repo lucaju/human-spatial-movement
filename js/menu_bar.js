@@ -183,12 +183,17 @@ function updateBarModeOption() {
 
 
     for (var i = 0; i < activeModes.length; i++) {
-        var opt = barModeOption.append(
-            '<label class="btn btn-default">'
-            + '<input type="radio" name="options" id="option'+ (i+2) +'" autocomplete="off">'
-            + activeModes[i].key
-            + '</label>'
-        );
+
+        if (activeModes[i].key != "undefined") { 
+
+            barModeOption.append(
+                '<label class="btn btn-default modeOption">'
+                    + '<img class="modeOptionImage" src="'+ "images/icons/" + activeModes[i].key + ".png" +'" alt="'+activeModes[i].key+'" height="15" width="15">'
+                    + '<input type="radio" name="options" id="option'+ (i+2) +'" autocomplete="off">'
+                    + activeModes[i].key
+                + '</label>'
+            );
+        }
         
     }
 
