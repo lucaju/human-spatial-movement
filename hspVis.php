@@ -49,8 +49,8 @@
 
         <div class="btn-toolbar" role="toolbar">
 
-            <div id="registrationBTContainer" class="btn-group dropup">
-                <button id="registrationBT" class="btn btn-primary" type="button" data-toggle="modal" data-target="#registrationModal">register</button>
+            <div id="registrationBTContainer">
+                <button id="registrationBT" class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#registrationModal">register</button>
             </div>
 
             <div id="bar-period-option">
