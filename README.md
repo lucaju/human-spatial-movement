@@ -11,3 +11,7 @@ Either you are walking, running, cycling, driving, or even flying, mobile techno
 At first glance, visualize human spatial flow seems to be chaotic: endless vectors of movement coming and going to an infinite number of places as we drive from home to work, take public transportation to go to school, walk on the streets, and fly to any place in the planet.
 
 Human Spatial Movement is a interactive visualization that enable you to discover your mobility pattern through time and space. It shows all your Moves data into map while you can filter by date and type of transportation, and encode information by type of transportation and duration. You can uncover your digital traces to learn about your mobility preferences in everyday life
+
+#code instruction
+You have first to set up a developer account with MovesApp: https://dev.moves-app.com
+After create a new app, you should set up your *client ID* and *client secret* in the config.php in the moves_api folder.
