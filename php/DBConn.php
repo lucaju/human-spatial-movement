@@ -11,10 +11,6 @@ class DBConn {
 		//local
 		$user = "root";
 		$pass = "root";
-
-		//remore
-		// $user = "fluxoart_movemen";
-		// $pass = "HumanSpatialMovement";
 	
 		//if I have no connection, build one
 		if (empty(self::$connection)) {
