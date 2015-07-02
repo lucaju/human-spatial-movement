@@ -38,6 +38,7 @@ var maxDuration = 0;
 var encode = "none";
 
 var moveElements;
+var placeElements;
 
 //**** DATA
 
@@ -342,7 +343,7 @@ function render() {
 
    
     //places
-    var placeElements = svgPlaces.selectAll("path")
+    placeElements = svgPlaces.selectAll("path")
         .data(places);
 
     if (renderPhase == 0) {
@@ -354,6 +355,15 @@ function render() {
     }
 
     placeElements.attr("class","place");
+
+    placeElements.on("mouseover", function(d) {
+        console.log("oi");
+    });
+
+    placeElements.on("mouseleave", function(d) {
+        console.log("ei");
+    })
+
 
     placeElements.exit().remove();
 
@@ -443,43 +453,6 @@ function getColorByAtivity(activity) {
             break;
 
     }
-
-
-    // switch(activity) {
-
-    //     case "walking":
-    //         color = "#d9534f"; //red
-    //         break;
-
-    //     case "running":
-    //         color = "#f0ad4e"; //orange
-    //         break;
-
-    //     case "cycling":
-    //         color = "#f0ad4e"; //orange
-    //         break;
-
-    //     case "transport":
-    //         color = "#428bca";  //dark blue
-    //         break;
-
-    //     case "underground":
-    //         color = "#5bc0de"; //light blue
-    //         break;
-
-    //     case "bus":
-    //         color = "#386cb0"; // blue
-    //         break;
-
-    //     case "airplane":
-    //         color = "#5cb85c"; //green
-    //         break;
-
-    //     default:
-    //         color = "black";
-    //         break;
-
-    // }
 
     return color;
 }
@@ -746,10 +719,40 @@ function highlightRoute(filter) {
     
 }
 
+function highlightPlace(filter) {
 
+    placeElements.each(function(d) {
 
+        var place = d3.select(this);
 
+        switch (filter.type) {
 
+            case "date":
+
+                if (filter.value == d.date) {
+                    place.attr("stroke","#4d4d4d");
+                    place.attr("stroke-opacity",1)
+                    place.moveToFront();
+                } else {
+                    //if (encode == "none") 
+                    place.attr("stroke","#333");
+                    place.attr("stroke-opacity",.1)
+                    place.attr("fill-opacity",.1)
+                };
+                
+                break;
+
+            default:
+                place.attr("stroke", "#333333")
+                place.attr("stroke-opacity",1);
+                place.attr("fill-opacity",1)
+                
+                break;
+
+        }
+    });
+   
+}
 
 
 

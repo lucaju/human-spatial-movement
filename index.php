@@ -99,18 +99,58 @@
       </div>
     </div>
 </div>
+<div class="container-fluid">
+	<div id="content" class="row textBody center-block">
+		<div class="col-md-4">
+	  	
+		  	<h3>About</h3>
 
-<div id="about" class="textBody bodyCenter center-block">
-  <h3>About</h3>
+			<div id="aboutText">
+			    <p>As an inherent human condition, mobility brings together communicative, technological, geographical, economical, cultural, and social forces that transform the surrounding space. In fact, space only becomes social meaningful through human agency and activities, such as walking and the desire to move in one or another direction. As we walk, we always leave some sort of traces behind, which could be both immaterial, like nostalgia or desire, and concrete, such as built environment, and marks on the sand.</p>
+			    <p>All these moments and traces are transitory (space) and temporary (time), which makes difficult to understand and analyze their nature and rules. Yet, if we follow our trails we might be able to understand our interactions with the surrounding environment and with other people; we even might be able to grasp the patterns and rules that govern our movements.</p>
+			    <p>Either you are walking, running, cycling, driving, or even flying, mobile technologies can follow and track your movements through space: <a href="https://www.moves-app.com/" target="_blank">Moves</a>, for instance, locates you storing geo-coordinates and timestamps to calculate distances, durations and even the type of transportation you are using.</p>
+			    <p>At first glance, visualize human spatial flow seems to be chaotic: endless vectors of movement coming and going to an infinite number of places as we drive from home to work, take public transportation to go to school, walk on the streets, and fly to any place in the planet.</p>
+			    <p>Human Spatial Movement is a interactive visualization that enable you to discover your mobility pattern through time and space. It shows all your Moves data into map while you can filter by date and type of transportation, and encode information by type of transportation and duration. You can uncover your digital traces to learn about your mobility preferences in everyday life.
+			    </p>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<h3>Features</h3>
 
-  <div id="aboutText">
-    <p>As an inherent human condition, mobility brings together communicative, technological, geographical, economical, cultural, and social forces that transform the surrounding space. In fact, space only becomes social meaningful through human agency and activities, such as walking and the desire to move in one or another direction. As we walk, we always leave some sort of traces behind, which could be both immaterial, like nostalgia or desire, and concrete, such as built environment, and marks on the sand.</p>
-    <p>All these moments and traces are transitory (space) and temporary (time), which makes difficult to understand and analyze their nature and rules. Yet, if we follow our trails we might be able to understand our interactions with the surrounding environment and with other people; we even might be able to grasp the patterns and rules that govern our movements.</p>
-    <p>Either you are walking, running, cycling, driving, or even flying, mobile technologies can follow and track your movements through space: <a href="https://www.moves-app.com/" target="_blank">Moves</a>, for instance, locates you storing geo-coordinates and timestamps to calculate distances, durations and even the type of transportation you are using.</p>
-    <p>At first glance, visualize human spatial flow seems to be chaotic: endless vectors of movement coming and going to an infinite number of places as we drive from home to work, take public transportation to go to school, walk on the streets, and fly to any place in the planet.</p>
-    <p>Human Spatial Movement is a interactive visualization that enable you to discover your mobility pattern through time and space. It shows all your Moves data into map while you can filter by date and type of transportation, and encode information by type of transportation and duration. You can uncover your digital traces to learn about your mobility preferences in everyday life.</p>
-  </div>
+			<h5 class="text-primary"><span class="glyphicon glyphicon-chevron-right"></span> Visualize your movements in a map</h5>
+			<img src="images/map-snapshot_map.png" class="img-responsive img-thumbnail">
 
+			<div class="row">
+
+				<div class="col-md-5">
+
+					<h5 class="text-primary"><span class="glyphicon glyphicon-chevron-right"></span> Encode by type of transportation</h5>
+					<img src="images/icons/airplane.png" width="20px" height="20px">
+					<img src="images/icons/bus.png" width="20px" height="20px">
+					<img src="images/icons/car.png" width="20px" height="20px">
+					<img src="images/icons/cycling.png" width="20px" height="20px">
+					<img src="images/icons/ferry.png" width="20px" height="20px">
+					<img src="images/icons/funicular.png" width="20px" height="20px">
+					<img src="images/icons/running.png" width="20px" height="20px">
+					<img src="images/icons/train.png" width="20px" height="20px">
+					<img src="images/icons/transport.png" width="20px" height="20px">
+					<img src="images/icons/underground.png" width="20px" height="20px">
+					<img src="images/icons/walking.png" width="20px" height="20px">
+
+					<h5 class="text-primary"><span class="glyphicon glyphicon-chevron-right"></span> Filter by date</h5>
+					<img src="images/map-snapshot_period.png" class="img-responsive img-thumbnail">
+
+				</div>
+
+				<div class="col-md-7">
+					<h5 class="text-primary"><span class="glyphicon glyphicon-chevron-right"></span> See trends in distances and durations</h5>
+					<img src="images/map-snapshot_trend.png" class="img-responsive img-thumbnail">
+				</div>
+			</div>
+
+		</div>
+
+	</div>
 </div>
 
 <div id="footer">

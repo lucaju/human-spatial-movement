@@ -126,10 +126,11 @@ function updateInfoVis() {
 
 			var highlight = {
 				type: "mode",
-				value: d.key,
+				value: d.key
 			}
 
 			highlightRoute(highlight);
+			
 		})
 		.on("mouseout", function(d) {
 			var singular = d3.select(this).attr("class","infoBars infoBars-danger");
@@ -141,6 +142,7 @@ function updateInfoVis() {
 		 	}
 
 			var highlight = { type: "reset" };
+
 			highlightRoute(highlight);
 		})
 
@@ -355,11 +357,13 @@ function updateListDays() {
 			}
 
 			highlightRoute(highlight);
+			highlightPlace(highlight);
 		})
 		.on("mouseleave", function(d) {
 			d3.select(this).attr("class","day panel panel-default");
 			var highlight = { type: "reset" };
 			highlightRoute(highlight);
+			highlightPlace(highlight);
 		})
 
 	day.exit().remove();
