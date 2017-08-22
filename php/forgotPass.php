@@ -31,7 +31,7 @@ if($_POST['action']) {
 			$subject = '[Human Spatial Movement App] - Password recovery';
 			
 			$headers = 'From: Human Spatial Movement App' . "\r\n" .
-			    'Reply-To: lucaju@@gmail.ca' . "\r\n" .
+			    'Reply-To: youremail@server.com' . "\r\n" .
 			    'X-Mailer: PHP/' . phpversion();
 			    
 			$message = "Hello \n\n".
