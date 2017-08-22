@@ -6,11 +6,11 @@ class DBConn {
 	
 	public static function getConnection() {
 
-		$db = "fluxoart_hsp";
+		$db = ""; //Database name
 
 		//local
-		$user = "root";
-		$pass = "root";
+		$user = ""; // User
+		$pass = ""; // Password
 	
 		//if I have no connection, build one
 		if (empty(self::$connection)) {
